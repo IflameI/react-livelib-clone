@@ -1,4 +1,6 @@
-import {Container, styled, Toolbar} from '@mui/material';
+import {Container, styled} from '@mui/material';
+import {Link} from 'react-router-dom';
+import Grid from '@mui/material/Grid';
 
 
 export const DrawerHeader = styled('div')(({theme}) => ({
@@ -16,6 +18,7 @@ export const Main = styled(Container, {
 	slot: 'Root',
 
 })(({theme}) => ({
+	marginTop: '15px',
 	'&&': {
 		overflowX: 'hidden',
 		width: '100%',
@@ -28,7 +31,7 @@ export const Main = styled(Container, {
 	},
 }));
 
-export const HarnessToolbar = styled(Toolbar)(({theme}) => ({
+export const HarnessToolbar = styled(Grid)(({theme}) => ({
 	'&&': {
 		padding: '15px 3px 15px 3px',
 	},
@@ -38,5 +41,10 @@ export const HarnessToolbar = styled(Toolbar)(({theme}) => ({
 			paddingRight: '30px',
 		},
 	},
+}));
 
+export const HarnessLink = styled(Link)(({theme}) => ({
+	textDecoration: 'none',
+	color: '#000',
+	fontSize: '14px',
 }));

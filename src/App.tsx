@@ -6,19 +6,19 @@ import ErrorBoundary from "./common/ErrorBoundary/ErrorBoundary";
 import Harness from "./components/harness/Harness";
 
 const App = () => {
-    const location = useLocation();
+	const location = useLocation();
 
-    return (
-            <>
-                <CssBaseline/>
-                <ErrorBoundary key={location.pathname}>
-                    <Routes>
-                        <Route path="/" element={<Harness><Home/></Harness>}/>
-                        <Route path='*' element={<NotFound/>}/>
-                    </Routes>
-                </ErrorBoundary>
-            </>
-    )
+	return (
+		<>
+			<CssBaseline/>
+			<ErrorBoundary key={location.pathname}>
+				<Routes>
+					<Route path="/" element={<Harness><Home/></Harness>}/>
+					<Route path='*' element={<NotFound/>}/>
+				</Routes>
+			</ErrorBoundary>
+		</>
+	)
 }
 
 export default App

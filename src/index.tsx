@@ -7,18 +7,18 @@ import {StyledEngineProvider, ThemeProvider} from '@mui/material/styles';
 import {theme} from "./theme/defaultTheme";
 
 const root = ReactDOM.createRoot(
-        document.getElementById('root') as HTMLElement
+	document.getElementById('root') as HTMLElement
 );
 root.render(
-        <React.StrictMode>
-            <BrowserRouter>
-                <StyledEngineProvider injectFirst>
-                    <ThemeProvider theme={theme}>
-                        <App/>
-                    </ThemeProvider>
-                </StyledEngineProvider>
-            </BrowserRouter>
-        </React.StrictMode>
+	<React.StrictMode>
+		<BrowserRouter>
+			<StyledEngineProvider injectFirst>
+				<ThemeProvider theme={theme}>
+					<App/>
+				</ThemeProvider>
+			</StyledEngineProvider>
+		</BrowserRouter>
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

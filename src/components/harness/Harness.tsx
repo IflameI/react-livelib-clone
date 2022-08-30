@@ -3,20 +3,20 @@ import HarnessAppBar from './HarnessAppBar';
 import {DrawerHeader, Main} from "./HarnessStyles";
 
 interface IHarness {
-    children: React.ReactNode
+	children: React.ReactNode
 }
 
 const Harness: FunctionComponent<IHarness> = (props) => {
 
-    return (
-            <>
-                <HarnessAppBar/>
-                <DrawerHeader/>
-                <Main maxWidth={false}>
-                    {props.children}
-                </Main>
-            </>
-    );
+	return (
+		<>
+			<HarnessAppBar/>
+			<DrawerHeader/>
+			<Main maxWidth={false}>
+				{props.children}
+			</Main>
+		</>
+	);
 };
 
 export default Harness;
