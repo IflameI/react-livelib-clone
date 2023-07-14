@@ -12,7 +12,7 @@ const Harness: FunctionComponent<IHarness> = (props) => {
 		<>
 			<HarnessAppBar/>
 			<DrawerHeader/>
-			<Main maxWidth={false}>
+			<Main maxWidth={'lg'}>
 				{props.children}
 			</Main>
 		</>

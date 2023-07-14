@@ -1,10 +1,11 @@
 import React, {FunctionComponent} from 'react';
 
-const NotFound: FunctionComponent = () => {
+const NotFoundPage: FunctionComponent = () => {
 
 	return (
 		<div>Ничего не найдено</div>
 	);
 };
 
-export default NotFound;
+
+export default NotFoundPage;

@@ -1,5 +1,5 @@
 import {Container, styled} from '@mui/material';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 
 
@@ -18,7 +18,7 @@ export const Main = styled(Container, {
 	slot: 'Root',
 
 })(({theme}) => ({
-	marginTop: '15px',
+	marginTop: '35px',
 	'&&': {
 		overflowX: 'hidden',
 		width: '100%',
@@ -35,15 +35,9 @@ export const HarnessToolbar = styled(Grid)(({theme}) => ({
 	'&&': {
 		padding: '15px 3px 15px 3px',
 	},
-	[theme.breakpoints.up('sm')]: {
-		'&&': {
-			paddingLeft: '30px',
-			paddingRight: '30px',
-		},
-	},
 }));
 
-export const HarnessLink = styled(Link)(({theme}) => ({
+export const HarnessLink = styled(NavLink)(({theme}) => ({
 	textDecoration: 'none',
 	color: '#000',
 	fontSize: '14px',
